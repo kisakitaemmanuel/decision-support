@@ -1,0 +1,14 @@
+# core (runs everything in deterministic mode with the hashing embedder)
+numpy>=1.26
+# API
+fastapi>=0.110
+uvicorn[standard]>=0.27
+pydantic>=2.5
+# retrieval quality (install what you can pre-download models for; offline machines need the model files copied in)
+faiss-cpu>=1.8
+fastembed>=0.3            # or: sentence-transformers>=3.0
+# local LLM
+llama-cpp-python>=0.2.90
+# desktop UI
+PySide6>=6.6
+# tests: python -m unittest discover -s tests   (pytest optional)
